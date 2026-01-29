@@ -151,11 +151,12 @@ O(log n) – Logarithmic Space
 ---------------------------
 Memory grows with recursion depth.
 
-Examples:
+Example:
 - Recursive binary search
 
 Each recursive call uses stack memory.
 Even though the number of recursive calls is small, 
 it increases as log n when the input size increases,
 so the space complexity is O(log n).
+
 
