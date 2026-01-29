@@ -7,6 +7,9 @@ This repository contains C programming implementations covering core concepts su
 - Strings
 - Pointers
 - Structures
+- Bit Manipulation
+- Searching Algorithms
+- Linked Lists (Singly Linked List)
 
 
 ## Purpose
