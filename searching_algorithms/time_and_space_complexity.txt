@@ -1,0 +1,111 @@
+WHAT IS TIME COMPLEXITY?
+
+Time complexity means:
+How the number of steps in a program increases as input size (n) increases.
+
+It does NOT mean time in seconds or milliseconds.
+It means how many operations (steps / comparisons) are performed.
+
+
+---- COMMON TIME COMPLEXITIES ----
+
+O(1) – Constant Time
+-------------------
+The code runs the same number of times, no matter how big n is.
+
+Example:
+-Accessing a single array element  arr[0]
+-No loops involved.
+
+
+O(n) – Linear Time
+-----------------
+The code runs once for each element.
+
+Example:
+One loop
+
+for(i = 0; i < n; i++)
+{
+    // runs n times
+}
+
+As n increases, steps increase linearly.
+
+
+O(n²) – Nested Loop Time
+-----------------------
+One loop inside another loop.
+
+Example:
+for(i = 0; i < n; i++)
+{
+    for(j = 0; j < n; j++)
+    {
+        // runs n * n times
+    }
+}
+
+This becomes slow for large inputs.
+
+
+O(n³) – Triple Nested Loop Time (Rare)
+-------------------------------------
+Three loops inside each other.
+
+Example:
+for(i = 0; i < n; i++)
+{
+    for(j = 0; j < n; j++)
+    {
+        for(k = 0; k < n; k++)
+        {
+            // runs n * n * n times
+        }
+    }
+}
+
+Very slow and rarely used in practice.
+
+
+
+O(log n) – Logarithmic Time
+---------------------------
+O(log n) means the number of steps increases very slowly because
+the input size is reduced by a constant factor (usually divided by 2)
+in every step.
+
+*The problem size becomes smaller very fast.
+
+How to Identify O(log n) in Code:
+- The loop variable is divided or multiplied by a constant.
+- The input size is halved every iteration.
+
+Common Patterns:
+n = n / 2
+i = i / 2
+i = i * 2
+
+Example:
+while(n > 1)
+{
+    n = n / 2;
+}
+
+Each iteration removes half of the remaining work.
+
+
+BEST, AVERAGE, AND WORST CASE (SEARCHING)
+----------------------------------------
+
+Best Case:
+Minimum number of steps.
+Example: element found at the first index.
+
+Average Case:
+Normal number of steps.
+Example: element found somewhere in the middle.
+
+Worst Case:
+Maximum number of steps.
+Example: element found at the last index OR not found.
