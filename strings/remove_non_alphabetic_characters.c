@@ -1,3 +1,15 @@
+/*
+Description:
+Write a C program to remove all non-alphabetic characters 
+from a given string.
+
+The program should keep only uppercase and lowercase letters
+and discard digits, spaces, and special characters.
+
+Example:
+Input:  hello123@ world!
+Output: helloworld
+*/
 #include <stdio.h>
 #include <string.h>
 
